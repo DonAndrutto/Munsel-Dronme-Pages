@@ -40,3 +40,10 @@ address { margin-top: 2rem; font-style: normal; }
 .focused .bar-inner { margin-right: max(.5rem, env(safe-area-inset-right)); }
 .focused .bar-center { border: 0; margin: 0; padding: 0; }
 .status { width: fit-content; max-width: min(32rem,95%); margin: 0 auto .5rem; padding: .45rem .8rem; text-align: center; background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: 6px; font: .9rem/1.5 Inter,sans-serif; }
+@media (max-width: 35rem) {
+  .title-page { padding-top: 1.65rem; }
+  .title-page h1 { font-size: 1.25em; }
+  .title-page h1 .tib { font-size: 1.2em; }
+  .title-page h1 .pho { font-size: .56em; }
+  .title-page h1 .pl { white-space: normal; text-wrap: balance; }
+}
