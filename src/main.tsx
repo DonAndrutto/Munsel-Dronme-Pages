@@ -100,3 +100,9 @@ function Reader() {
 }
 
 createRoot(document.getElementById('root')!).render(<StrictMode><Reader /></StrictMode>);
+
+if (import.meta.env.PROD && 'serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js').catch(error => {
+    console.warn('Nie udało się przygotować czytnika do pracy offline.', error);
+  });
+}
